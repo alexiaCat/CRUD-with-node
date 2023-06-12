@@ -5,11 +5,17 @@
         "año": "1988",
         "autor": "Katsuhiro Otomo"
     },
+    "2": {
+        "nombre": "Dragon Ball",
+        "genero": "Shonen",
+        "año": "1986",
+        "autor": "Akira Toriyama"
+    },
     "3": {
-        "nombre": "Nuevo nombre",
-        "genero": "Nuevo género",
-        "año": "2023",
-        "autor": "Nuevo autor"
+        "nombre": "Sailor Moon",
+        "genero": "Shojo",
+        "año": "1992",
+        "autor": "Naoko Takeuchi"
     },
     "4": {
         "nombre": "Naruto",
@@ -22,18 +28,5 @@
         "genero": "Mecha",
         "año": "1995",
         "autor": "Yoshiyuki Sadamoto"
-    },
-    "6": {
-        "nombre": "Nuevo nodfgfdmbre",
-        "genero": "Nuevo género",
-        "año": "2023",
-        "autor": "Nuevo autor"
-    },
-    "7": {
-        "id": 7,
-        "nombre": "Chainsaw Man",
-        "genero": "Shonen",
-        "año": "2018",
-        "autor": "Tatsuki Fujimoto"
     }
 }
