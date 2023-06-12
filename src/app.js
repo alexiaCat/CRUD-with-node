@@ -7,7 +7,8 @@ app.use(express.json());
 const usersRouter = require('./routes/animes');
 app.use('/animes', usersRouter);
 
-app.listen(3000, () => {
+const server = app.listen(3000, () => {
   console.log('Servidor iniciado en el puerto 3000');
 });
 
+module.exports = app;

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/test"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
     "mocha": "^10.2.0"
   }
 }

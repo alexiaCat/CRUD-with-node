@@ -27,7 +27,7 @@ Para ejecutar el servidor, sigue estos pasos:
 
 Pruebas:
 
-1. Ejecuta el siguiente comando `npm test` para ejecutar las pruebas.
+1. Ejecuta el siguiente comando `npm test` para ejecutar las pruebas al CRUD.
 
 
 ¡Diviértete! 🎌📺

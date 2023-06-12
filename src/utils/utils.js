@@ -37,7 +37,7 @@ function writeJSON(filePath, data, callback) {
         callback(null);
     });
 }
-
+  
 
 module.exports = {
     readJSON,
