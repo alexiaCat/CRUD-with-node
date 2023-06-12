@@ -21,9 +21,9 @@ Para ejecutar el servidor, sigue estos pasos:
 
 4. El servidor de ejecutará en http://localhost:3000.
 
-5. Puedes probar las siguiente ruta:
-    GET: http://localhost:3000/animes/ obtiene el JSON de animes
-    GET: http://localhost:3000/animes/:id obtén anime por ID
+5. Puedes probar las siguiente rutas:
+    * GET: http://localhost:3000/animes/ obtiene el JSON de animes
+    * GET: http://localhost:3000/animes/:id obtén anime por ID
 
 Pruebas:
 

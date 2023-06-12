@@ -1,0 +1,39 @@
+{
+    "1": {
+        "nombre": "Akira",
+        "genero": "Seinen",
+        "año": "1988",
+        "autor": "Katsuhiro Otomo"
+    },
+    "3": {
+        "nombre": "Nuevo nombre",
+        "genero": "Nuevo género",
+        "año": "2023",
+        "autor": "Nuevo autor"
+    },
+    "4": {
+        "nombre": "Naruto",
+        "genero": "Shonen",
+        "año": "2002",
+        "autor": "Masashi Kishimoto"
+    },
+    "5": {
+        "nombre": "Neon Genesis Evangelion",
+        "genero": "Mecha",
+        "año": "1995",
+        "autor": "Yoshiyuki Sadamoto"
+    },
+    "6": {
+        "nombre": "Nuevo nodfgfdmbre",
+        "genero": "Nuevo género",
+        "año": "2023",
+        "autor": "Nuevo autor"
+    },
+    "7": {
+        "id": 7,
+        "nombre": "Chainsaw Man",
+        "genero": "Shonen",
+        "año": "2018",
+        "autor": "Tatsuki Fujimoto"
+    }
+}
