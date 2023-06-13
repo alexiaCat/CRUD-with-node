@@ -22,12 +22,15 @@ Para ejecutar el servidor, sigue estos pasos:
 4. El servidor de ejecutará en http://localhost:3000.
 
 5. Puedes probar las siguiente rutas:
-    * GET: http://localhost:3000/animes/ obtiene el JSON de animes
-    * GET: http://localhost:3000/animes/:id obtén anime por ID
+   - **GET: http://localhost:3000/animes** - Obtiene el JSON de todos los animes almacenados.
+   - **GET: http://localhost:3000/animes/:id** - Obtiene los detalles de un anime específico según su ID.
+   - **POST: http://localhost:3000/animes** - Agrega un nuevo anime. Se deben proporcionar los datos del anime en el cuerpo de la solicitud.
+   - **PUT: http://localhost:3000/animes/:id** - Modifica un anime existente. Se deben proporcionar los nuevos datos del anime en el cuerpo de la solicitud. Es necesario especificar el ID del anime a modificar en la URL.
+   - **DELETE: http://localhost:3000/animes/:id** - Elimina un anime existente. Es necesario especificar el ID del anime a eliminar en la URL.
 
 Pruebas:
 
-1. Ejecuta el siguiente comando `npm test` para ejecutar las pruebas al CRUD.
+1. Para ejecutar las pruebas al CRUD, ejecuta el siguiente comando: `npm run test`.
 
 
 ¡Diviértete! 🎌📺
