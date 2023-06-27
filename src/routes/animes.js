@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const utils = require('../utils/utils');
+const Anime = require('../models/anime');
 
 
 // leer animes XD ruta http://localhost:3000/animes
@@ -67,7 +68,7 @@ router.post('/', (req, res) => {
       }
 
       const newAnimeId = lastAnimeId + 1;
-      const newAnime = { nombre, genero, año, autor };
+      const newAnime  = new Anime(nombre, genero, año, autor);
       animes[newAnimeId] = newAnime;
 
       utils.writeJSON('../anime.json', animes, (err) => {
