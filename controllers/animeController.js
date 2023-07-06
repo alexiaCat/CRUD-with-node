@@ -98,7 +98,8 @@ const addAnimeController = (req, res) => {
                     return;
                 }
 
-                res.redirect('/animes');
+                res.status(201).json(newAnime);
+
             });
         } catch (error) {
             console.error(error);

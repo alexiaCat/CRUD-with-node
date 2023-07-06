@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>{{title}}</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/styles.css">
 </head>
 
@@ -14,7 +15,7 @@
     {{> navbar}}
     <div class="container  container-centered">
         <h1 class="text-center text-light font-weight-bold bg-dark">AGREGAR ANIME</h1>
-        <form class="bg-light p-4 rounded" method="post" action="/animes">
+        <form class="bg-light p-4 rounded" method="post" action="/animes" id="addForm">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -37,7 +38,49 @@
         </form>
     </div>
 
-   <script src="/script.js"></script>
+    <script src="/script.js"></script>
+    <script>
+
+        let selectGen = document.getElementById("genero");
+
+        animeGenres.forEach(function (genero) {
+            let option = document.createElement("option");
+            option.value = genero;
+            option.text = genero;
+            selectGen.appendChild(option);
+        });
+
+        document.getElementById("addForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const genero = document.getElementById("genero").value;
+            const año = document.getElementById("año").value;
+            const autor = document.getElementById("autor").value;
+
+            const newAnime = {
+                nombre: nombre,
+                genero: genero,
+                año: año,
+                autor: autor
+            };
+
+            console.log(newAnime)
+
+            axios.post('/animes', newAnime)
+                .then(response => {
+                    window.location.href = '/animes';
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+
+            window.location.href = '/animes';;
+
+
+
+        });
+    </script>
 
 </body>
 
