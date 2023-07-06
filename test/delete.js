@@ -1,5 +1,5 @@
 const chai = require('chai');
-const app = require('../app');
+const app = require('../index');
 
 describe('Probando respuesta del servidor para metodo DELETE /animes/:id', () => {
     it('Comprobando que metodo DELETE responde con codigo 200', (done) => {

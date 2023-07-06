@@ -1,5 +1,5 @@
 const chai = require('chai');
-const app = require('../app');
+const app = require('../index');
 
 describe('Probando respuesta del servidor para metodo PUT /animes/:id', () => {
     it('Comprobando que metodo PUT responde con codigo 200', (done) => {

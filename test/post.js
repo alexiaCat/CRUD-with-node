@@ -1,5 +1,5 @@
 const chai = require('chai');
-const app = require('../app');
+const app = require('../index');
 
 describe('Probando respuesta del servidor para metodo POST /animes', () => {
     it('Comprobando que metodo POST responde con codigo 201', (done) => {
