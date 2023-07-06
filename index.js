@@ -15,7 +15,7 @@ const routes = require('./routes/animeRoutes');
 app.use(routes);
 
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Servidor iniciado en el puerto ${port}`);
 });
