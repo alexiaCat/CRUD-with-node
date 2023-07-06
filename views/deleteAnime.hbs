@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+  {{> navbar}}
+  <div class="container container-centered">
+    <h1 class="text-center text-light font-weight-bold bg-dark">ELIMINAR ANIME</h1>
+    <form class="bg-light p-4 rounded" id="deleteForm">
+      <div class="my-3">
+        <label class="form-label font-weight-bold">Selecciona el anime a eliminar</label>
+        <select class="form-control" id="id">
+          {{#each listAnimes}}
+          <option value="{{this.id}}">{{this.id}}. {{this.nombre}}</option>
+          {{/each}}
+        </select>
+        <button type="submit" class="btn btn-block btn-dark mt-2 py-2">Eliminar</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('deleteForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var animeId = document.getElementById('id').value;
+
+      axios.delete(`/animes/${animeId}`)
+        .then(function (res) {
+          alert(res.data.mensaje);
+          window.location.href = '/animes';
+        })
+        .catch(function (error) {
+          alert('Error al eliminar el anime');
+          console.error(error);
+        });
+    });
+  </script>
+</body>
+
+</html>

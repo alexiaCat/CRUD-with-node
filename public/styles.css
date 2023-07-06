@@ -1,0 +1,24 @@
+.main-container {
+    min-height: calc(100vh - 56px);
+    background-image: url("https://i.ibb.co/7XQTh4v/1298689.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container-centered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .container-centered {
+        top: 210px;
+    }
+  }
